@@ -1,0 +1,463 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 110px;
+  background: rgba(255, 255, 255, 0.649);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+.header h2{
+  font-size: 25px;
+  color: black;
+}
+.logo img{
+  display: block;
+  width: 220px;
+  height: 30px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 0%;
+  margin-top: 0%;
+  margin-left: 25px;
+}
+  .navbar a {
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 50px;
+    font-weight: 600;
+    color: #9f3434;
+  }
+
+  .navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background-color: #000000;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navbar a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.navbar a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+
+
+
+  .infobg {
+    padding-top: 14%;
+  }
+
+  
+  .infobg h1 {
+    position: relative;
+    margin-top: 1%;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 60px;
+    font-weight: 700;
+    color: #331d1d;
+  }
+  
+  .infobg p {
+    position: relative;
+    margin-top: 1%;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 20px;
+    color: #331d1d;
+  }
+  
+
+  .info {
+    background-color: #f2d1b5;
+    background-size: cover;
+    background-position: center;
+    height: 240vh;
+    overflow: hidden;
+  }
+  .infobg {
+    background-image: url('images/compbg.png');
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.315);
+    background-size: cover;
+    border-radius: 20px;
+    background-position: center;
+    height: 60vh;
+    top: 120px;
+    margin-left: 400px;
+    margin-right: 400px;
+    position: relative;
+    overflow: hidden;
+  background-blend-mode: multiply;
+  }
+  
+  .contents {
+    background-color: #e6f0f1;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.315);
+    background-size: cover;
+    border-radius: 20px;
+    background-position: center;
+    height: 80vh;
+    top: 120px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    background-blend-mode: multiply;
+    padding: 2%;
+  }
+  
+  .contents h1 {
+    position: relative;
+    margin-top: 1%;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 40px;
+    font-weight: 700;
+    color: #331d1d;
+  }
+  .infobg img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 20px;
+  }
+
+  .infocontainerA {
+    width: 350px;
+    height: 500px;
+    vertical-align: top;
+    display: inline-block;
+  }
+  .infocontainerB {
+    width: 350px;
+    height: 500px;
+    display: inline-block;
+  }
+  .infocontainerC {
+    width: 350px;
+    height: 500px;
+    display: inline-block;
+  }
+  .infocontainerD {
+    width: 350px;
+    height: 500px;
+    display: inline-block;
+  }
+  .infocontainerE {
+    width: 350px;
+    height: 500px;
+    display: inline-block;
+  }
+
+  .cardA {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-top: 50px;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+  }
+
+  .infocontainerA:hover > .cardA {
+    cursor: pointer;
+    transform: rotateY(180deg);
+  }
+
+  .frontA,
+  .backA {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+  }
+
+  .frontA {
+    background-image: url(images/callcenter.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .backA {
+    background-color: #331d1d;
+    transform: rotateY(180deg);
+  }
+
+  .backA p {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    color: #e6f0f1;
+  }
+
+  .backA h1 {
+    font-size: 25px;
+    margin-top: 20px;
+    color: #e6f0f1;
+  }
+
+  .cardB {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-top: 50px;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+  }
+
+  .infocontainerB:hover > .cardB {
+    cursor: pointer;
+    transform: rotateY(180deg);
+  }
+
+  .frontB,
+  .backB {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+  }
+
+  .frontB {
+    background-image: url(images/netcafe.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .backB {
+    background-color: #331d1d;
+    transform: rotateY(180deg);
+  }
+
+  .backB p {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    color: #e6f0f1;
+  }
+
+  .backB h1 {
+    font-size: 25px;
+    margin-top: 20px;
+    color: #e6f0f1;
+  }
+
+  .cardC {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-top: 50px;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+  }
+
+  .infocontainerC:hover > .cardC {
+    cursor: pointer;
+    transform: rotateY(180deg);
+  }
+
+  .frontC,
+  .backC {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+  }
+
+  .frontC {
+    background-image: url(images/unity.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .backC {
+    background-color: #331d1d;
+    transform: rotateY(180deg);
+  }
+
+  .backC p {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    color: #e6f0f1;
+  }
+
+  .backC h1 {
+    font-size: 25px;
+    margin-top: 20px;
+    color: #e6f0f1;
+  }
+
+  .cardD {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-top: 50px;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+  }
+
+  .infocontainerD:hover > .cardD {
+    cursor: pointer;
+    transform: rotateY(180deg);
+  }
+
+  .frontD,
+  .backD {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+  }
+
+  .frontD {
+    background-image: url(images/languages.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .backD {
+    background-color: #331d1d;
+    transform: rotateY(180deg);
+  }
+
+  .backD p {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    color: #e6f0f1;
+  }
+
+  .backD h1 {
+    font-size: 25px;
+    margin-top: 20px;
+    color: #e6f0f1;
+  }
+
+  .cardE {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-top: 50px;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+  }
+
+  .infocontainerE:hover > .cardE {
+    cursor: pointer;
+    transform: rotateY(180deg);
+  }
+
+  .frontE,
+  .backE {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+  }
+
+  .frontE {
+    background-image: url(images/pcbuild.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .backE {
+    background-color: #331d1d;
+    transform: rotateY(180deg);
+  }
+
+  .backE p {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    color: #e6f0f1;
+  }
+
+  .backE h1 {
+    font-size: 25px;
+    margin-top: 20px;
+    color: #e6f0f1;
+  }
+
+  .storycontainer {
+    background-color: #e6f0f1;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.315);
+    background-size: cover;
+    border-radius: 20px;
+    background-position: center;
+    height: 70vh;
+    top: 120px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    background-blend-mode: multiply;
+    padding: 5%;
+  }
+
+  .story h1{
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+    
+  }
+
+  .story p {
+    position: relative;
+    margin-top: 15px;
+    font-size: 23px;
+    text-align: center;
+  }

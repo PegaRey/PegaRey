@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 110px;
+  background: rgba(255, 255, 255, 0.649);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+.header h2{
+  font-size: 25px;
+  color: black;
+}
+.logo img{
+  display: block;
+  width: 220px;
+  height: 30px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 0%;
+  margin-top: 0%;
+  margin-left: 25px;
+}
+  .navbar a {
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 50px;
+    font-weight: 600;
+    color: #9f3434;
+  }
+
+  .navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background-color: #000000;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navbar a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.navbar a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+  .center {
+    background-image: url('images/firewall.jpg ');
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+  }
+
+
+  .contents {
+    padding-top: 25%;
+  }
+
+  .box {
+    border: 5px solid #331d1d;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #e6f0f1;
+    margin-bottom: 20px;
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+  .contents h1 {
+
+    position: relative;
+    margin-top: 7%;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 35px;
+    border: 2px solid #331d1d;
+    background-color: #00000030;
+    padding: 20px 40px;
+
+  }
+
+  .contents p {
+    position: relative;
+    margin-top: 2%;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+
+  .out {
+    background-color: #e1b486;
+    background-size: cover;
+    background-position: center;
+    height: 330vh;
+  }
+
+  .title h1 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    font-weight: 700;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%, -50%);
+    border: 2px solid #ffff;
+    background-color: #000000ef;
+    padding: 35px 150px;
+
+}
